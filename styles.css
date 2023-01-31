@@ -1,0 +1,284 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:khaki;
+    animation-name: bodyanim;
+    animation-duration: 10s;
+}
+@keyframes bodyanim {
+    from {background-color:yellow;}
+    to {background-color: khaki;}
+    
+}
+
+.container header{
+    background-color: aqua;
+    width: auto;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    margin:50px;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border:2px solid black;
+   
+   animation-name: headeranim;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    
+}
+@keyframes headeranim 
+{
+    0%
+    {
+        background-color:greenyellow;
+        border-radius:0px;
+        
+    }
+    25%
+    {
+        background-color:darkorchid;
+        border-radius:20px;
+
+    }
+    50%
+    {
+        background-color:dimgrey;
+        border-radius:10px;
+
+    }
+    75%
+    {
+        background-color:fuchsia;
+        border-radius:20px;
+    }
+    100%
+    {
+        background-color:aqua;
+        border-radius:0px;
+    }
+}
+
+.top{
+    display: flex;
+   width:auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   height: 50px;
+  line-height:50px;
+  transition-property: transform;
+  transition-duration: 5s;
+    transition-timing-function:linear;
+    transition-duration: 2s;
+    
+}
+
+.top:hover{
+   transform: rotateY(360deg);
+   background-color:rgb(53, 71, 71);
+}
+
+
+nav ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: end;
+    list-style: none;
+    
+    
+   
+}
+ nav ul li{
+    
+    margin-right:10px;
+    background-color: blanchedalmond;
+    width:90px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    border:1px solid blue;
+    
+
+}
+
+nav ul li :hover{
+background-color: grey;
+}
+
+nav ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:brown;
+    display: block;
+    line-height: 50px;
+}
+
+nav ul li a:hover{
+    color:antiquewhite;
+}
+
+
+.class1{
+
+width: 700px;
+height:200px;
+border:4px dashed palevioletred;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:30px;
+
+transition-duration:10s;
+transition-delay: 2s;
+animation: classanim 3s  infinite ;
+
+}
+.class1:hover
+{
+    transform: rotateX(360deg);
+    background-color:cornflowerblue;
+    
+}
+
+@keyframes classanim {
+    from{
+        background-color: burlywood;
+    }
+    to{
+        background-color:rgb(179, 230, 107);
+    }
+    
+}
+.class1 h3{
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:xx-large;
+height: 50px;
+background-color:cadetblue;
+
+
+}
+.class1 h3:hover
+{
+    background-color:cornflowerblue;
+    border-radius: 30%;
+}
+
+.items{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border:3px solid gray;
+    height:170px;
+    background-color:darkgoldenrod;
+    box-shadow: 2px 2px 2px 2px black;
+    margin: 100px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 10px;
+
+}
+.items:hover
+{
+    
+    background-color:cadetblue;
+    border-radius: 30px;  
+}
+.item1{
+    background-color: rgb(224, 161, 192);
+    animation-name:flexanim;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    transition-property:width;
+}
+.item1:hover
+{
+    
+    background-color:indianred;
+    transform: rotateX(360deg);
+}
+
+.item2{
+    background-color: rgb(231, 205, 218);
+    animation-name:flexanim;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+.item2:hover
+{
+    background-color:indianred;
+    transform: rotateX(360deg);
+}
+
+.item3{
+    background-color: rgb(224, 161, 192);
+    animation-name:flexanim;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+.item3:hover
+{
+    background-color:indianred;
+    transform: rotateX(360deg);
+}
+
+.item4{
+    background-color:  rgb(231, 205, 218);
+    animation-name:flexanim;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+.item4:hover
+{
+    background-color:indianred;
+    transform: rotateX(360deg);
+}
+@keyframes flexanim {
+    0%
+    {
+        
+        transform: rotate(0deg);
+        border-radius: 0%;
+    }
+    25% 
+    { 
+       background-color: aqua;
+        border-radius: 10%;
+    }
+    50%
+    { 
+        background-color:darkblue;
+        border-radius: 10%;
+    }
+    100%
+    {
+        
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+    
+}
+.items h2{
+    width:200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height:30px;
+    
+    text-decoration:overline;
+}
+
+
+main header h1{
+
+    color:crimson;
+    border:5px outset rgb(199, 46, 46);
+    height:60px;
+    margin:80px;
+    background-color:rgb(244, 172, 244);
+    text-align: center;
+    line-height: 50px;
+}
+
